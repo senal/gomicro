@@ -23,6 +23,6 @@ go.work
 # data files
 db-data
 
-# iamages
+# build images
 authenticationApp
 brokerApp
