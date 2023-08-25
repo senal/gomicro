@@ -1,4 +1,20 @@
+##S test endpoint call
 POST http://localhost:8080/  HTTP/1.1
 Content-Type: application/json
 
 {}
+
+
+
+
+###
+POST http://localhost:8080/handle  HTTP/1.1
+Content-Type:  application/json
+
+{
+	"action": "auth",
+	"auth": {
+		"email": "admin@example.com",
+		"password": "verysecret"
+	}
+}
