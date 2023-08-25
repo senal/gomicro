@@ -22,3 +22,7 @@ go.work
 
 # data files
 db-data
+
+# iamages
+authenticationApp
+brokerApp

@@ -5,7 +5,7 @@ services:
   broker-service:
     build:
       context: broker
-      dockerfile: broker.dockerfile
+      dockerfile: Dockerfile
     restart: always
     ports:
       - "8080:80"
@@ -16,7 +16,7 @@ services:
   authentication-service:
     build:
       context: authentication
-      dockerfile: authentication.dockerfile
+      dockerfile: Dockerfile
     restart: always
     ports:
       - "8081:80"
