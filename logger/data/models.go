@@ -1,4 +1,4 @@
-package main
+package data
 
 import (
 	"context"
@@ -13,15 +13,15 @@ import (
 
 var client *mongo.Client
 
-func New(mongo *mongo.Client) Model {
+func New(mongo *mongo.Client) Models {
 	client = mongo
 
-	return Model{
+	return Models{
 		LogEntry: LogEntry{},
 	}
 }
 
-type Model struct {
+type Models struct {
 	LogEntry LogEntry
 }
 
